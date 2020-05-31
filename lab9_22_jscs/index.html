@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>①JS選手権 / 22_内藤迅</title>
+  </head>
+  <body>
+    <!-- D3.js読み込み -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- svgエリア  -->
+    <svg id="svgarea">
+      <!-- ラインエリア -->
+      <!-- No0x0 -->
+      <line
+        id="line__010"
+        class="line__010"
+        x1="700"
+        y1="400"
+        x2="750"
+        y2="320"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__020"
+        class="line__020"
+        x1="700"
+        y1="400"
+        x2="750"
+        y2="480"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__030"
+        class="line__030"
+        x1="700"
+        y1="400"
+        x2="600"
+        y2="400"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__040"
+        class="line__040"
+        x1="750"
+        y1="320"
+        x2="800"
+        y2="400"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__050"
+        class="line__050"
+        x1="750"
+        y1="480"
+        x2="650"
+        y2="480"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__060"
+        class="line__060"
+        x1="600"
+        y1="400"
+        x2="650"
+        y2="320"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <!-- No01x -->
+      <line
+        id="line__011"
+        class="line__011"
+        x1="750"
+        y1="320"
+        x2="748"
+        y2="230"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__012"
+        class="line__012"
+        x1="750"
+        y1="320"
+        x2="835"
+        y2="270"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <!-- No02x -->
+      <line
+        id="line__021"
+        class="line__021"
+        x1="750"
+        y1="480"
+        x2="835"
+        y2="530"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__022"
+        class="line__022"
+        x1="750"
+        y1="480"
+        x2="748"
+        y2="570"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <!-- No03x -->
+      <line
+        id="line__031"
+        class="line__031"
+        x1="600"
+        y1="400"
+        x2="520"
+        y2="450"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__032"
+        class="line__032"
+        x1="600"
+        y1="400"
+        x2="520"
+        y2="350"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <!-- No04x -->
+      <line
+        id="line__041"
+        class="line__041"
+        x1="800"
+        y1="400"
+        x2="880"
+        y2="350"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__042"
+        class="line__042"
+        x1="800"
+        y1="400"
+        x2="880"
+        y2="450"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <!-- No05x -->
+      <line
+        id="line__051"
+        class="line__051"
+        x1="650"
+        y1="480"
+        x2="652"
+        y2="570"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__052"
+        class="line__052"
+        x1="650"
+        y1="480"
+        x2="565"
+        y2="530"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <!-- No06x -->
+      <line
+        id="line__061"
+        class="line__061"
+        x1="650"
+        y1="320"
+        x2="565"
+        y2="270"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__062"
+        class="line__062"
+        x1="650"
+        y1="320"
+        x2="652"
+        y2="230"
+        stroke="#848484"
+        stroke-width="3"
+      />
+
+      <!-- No1xx -->
+      <line
+        id="line__111"
+        class="line__111"
+        x1="748"
+        y1="230"
+        x2="742"
+        y2="125"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__112"
+        class="line__112"
+        x1="748"
+        y1="230"
+        x2="820"
+        y2="145"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__121"
+        class="line__121"
+        x1="835"
+        y1="270"
+        x2="890"
+        y2="175"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__122"
+        class="line__122"
+        x1="835"
+        y1="270"
+        x2="940"
+        y2="230"
+        stroke="#848484"
+        stroke-width="3"
+      />
+
+      <!-- No2xx -->
+      <line
+        id="line__211"
+        class="line__211"
+        x1="835"
+        y1="530"
+        x2="935"
+        y2="570"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__212"
+        class="line__212"
+        x1="835"
+        y1="530"
+        x2="885"
+        y2="625"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__221"
+        class="line__221"
+        x1="748"
+        y1="570"
+        x2="820"
+        y2="660"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__222"
+        class="line__222"
+        x1="748"
+        y1="570"
+        x2="744"
+        y2="675"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <!-- No3xx -->
+      <line
+        id="line__311"
+        class="line__311"
+        x1="520"
+        y1="450"
+        x2="420"
+        y2="505"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__312"
+        class="line__312"
+        x1="520"
+        y1="450"
+        x2="410"
+        y2="435"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__321"
+        class="line__321"
+        x1="520"
+        y1="350"
+        x2="410"
+        y2="365"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__322"
+        class="line__322"
+        x1="520"
+        y1="350"
+        x2="420"
+        y2="295"
+        stroke="#848484"
+        stroke-width="3"
+      />
+
+      <!-- No4xx -->
+      <line
+        id="line__411"
+        class="line__411"
+        x1="880"
+        y1="350"
+        x2="970"
+        y2="295"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__412"
+        class="line__412"
+        x1="880"
+        y1="350"
+        x2="985"
+        y2="365"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__421"
+        class="line__421"
+        x1="880"
+        y1="450"
+        x2="985"
+        y2="435"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__422"
+        class="line__422"
+        x1="880"
+        y1="450"
+        x2="970"
+        y2="505"
+        stroke="#848484"
+        stroke-width="3"
+      />
+
+      <!-- No5xx -->
+      <line
+        id="line__511"
+        class="line__511"
+        x1="652"
+        y1="570"
+        x2="656"
+        y2="675"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__512"
+        class="line__512"
+        x1="652"
+        y1="570"
+        x2="580"
+        y2="660"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__521"
+        class="line__521"
+        x1="565"
+        y1="530"
+        x2="510"
+        y2="625"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__522"
+        class="line__522"
+        x1="565"
+        y1="530"
+        x2="460"
+        y2="570"
+        stroke="#848484"
+        stroke-width="3"
+      />
+
+      <!-- No6xx -->
+      <line
+        id="line__611"
+        class="line__611"
+        x1="565"
+        y1="270"
+        x2="460"
+        y2="230"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__612"
+        class="line__612"
+        x1="565"
+        y1="270"
+        x2="510"
+        y2="175"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__621"
+        class="line__621"
+        x1="652"
+        y1="230"
+        x2="580"
+        y2="145"
+        stroke="#848484"
+        stroke-width="3"
+      />
+      <line
+        id="line__622"
+        class="line__622"
+        x1="652"
+        y1="230"
+        x2="656"
+        y2="125"
+        stroke="#848484"
+        stroke-width="3"
+      />
+
+      <!-- サークルエリア -->
+      <!-- No000 -->
+      <circle
+        id="circle__000"
+        class="circle__000"
+        cx="700"
+        cy="400"
+        r="30"
+        fill="rgb(255, 255, 255)"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <!-- No0x0 -->
+      <circle
+        id="circle__010"
+        class="circle__010"
+        cx="750"
+        cy="320"
+        r="30"
+        fill="#F8E0E0"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <circle
+        id="circle__020"
+        class="circle__020"
+        cx="750"
+        cy="480"
+        r="30"
+        fill="#E0F8E0"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__030"
+        class="circle__030"
+        cx="600"
+        cy="400"
+        r="30"
+        fill="#E0E0F8"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__040"
+        class="circle__040"
+        cx="800"
+        cy="400"
+        r="30"
+        fill="#F7F8E0"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__050"
+        class="circle__050"
+        cx="650"
+        cy="480"
+        r="30"
+        fill="#E0F8F7"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__060"
+        class="circle__060"
+        cx="650"
+        cy="320"
+        r="30"
+        fill="#F8E0F7"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <!-- No01x -->
+      <circle
+        id="circle__011"
+        class="circle__011"
+        cx="748"
+        cy="230"
+        r="30"
+        fill="#F5A9A9"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__012"
+        class="circle__012"
+        cx="835"
+        cy="270"
+        r="30"
+        fill="#F5D0A9"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <!-- No02x -->
+      <circle
+        id="circle__021"
+        class="circle__021"
+        cx="835"
+        cy="530"
+        r="30"
+        fill="#A9F5A9"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__022"
+        class="circle__022"
+        cx="748"
+        cy="570"
+        r="30"
+        fill="#A9F5D0"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <!-- No03x -->
+      <circle
+        id="circle__031"
+        class="circle__031"
+        cx="520"
+        cy="450"
+        r="30"
+        fill="#A9A9F5"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__032"
+        class="circle__032"
+        cx="520"
+        cy="350"
+        r="30"
+        fill="#D0A9F5"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <!-- No04x -->
+      <circle
+        id="circle__041"
+        class="circle__041"
+        cx="880"
+        cy="350"
+        r="30"
+        fill="#F2F5A9"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__042"
+        class="circle__042"
+        cx="880"
+        cy="450"
+        r="30"
+        fill="#D0F5A9"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <!-- No05x -->
+      <circle
+        id="circle__051"
+        class="circle__051"
+        cx="652"
+        cy="570"
+        r="30"
+        fill="#A9F5F2"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__052"
+        class="circle__052"
+        cx="565"
+        cy="530"
+        r="30"
+        fill="#A9D0F5"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <!-- No06x -->
+      <circle
+        id="circle__061"
+        class="circle__061"
+        cx="565"
+        cy="270"
+        r="30"
+        fill="#F5A9F2"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__062"
+        class="circle__062"
+        cx="652"
+        cy="230"
+        r="30"
+        fill="#F5A9D0"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <!-- No11x -->
+      <circle
+        id="circle__111"
+        class="circle__111"
+        cx="742"
+        cy="125"
+        r="30"
+        fill="#FA5858"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__112"
+        class="circle__112"
+        cx="820"
+        cy="145"
+        r="30"
+        fill="#FA8258"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <!-- No12x -->
+      <circle
+        id="circle__121"
+        class="circle__121"
+        cx="890"
+        cy="175"
+        r="30"
+        fill="#FAAC58"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__122"
+        class="circle__122"
+        cx="940"
+        cy="230"
+        r="30"
+        fill="#F7D358"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <!-- No21x -->
+      <circle
+        id="circle__211"
+        class="circle__211"
+        cx="935"
+        cy="570"
+        r="30"
+        fill="#58FA58"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__212"
+        class="circle__212"
+        cx="885"
+        cy="625"
+        r="30"
+        fill="#58FA82"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <!-- No22x -->
+      <circle
+        id="circle__221"
+        class="circle__221"
+        cx="820"
+        cy="660"
+        r="30"
+        fill="#58FAAC"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__222"
+        class="circle__222"
+        cx="744"
+        cy="675"
+        r="30"
+        fill="#58FAD0"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <!-- No31x -->
+      <circle
+        id="circle__311"
+        class="circle__311"
+        cx="420"
+        cy="505"
+        r="30"
+        fill="#5858FA"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__312"
+        class="circle__312"
+        cx="410"
+        cy="435"
+        r="30"
+        fill="#8258FA"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <!-- No32x -->
+      <circle
+        id="circle__321"
+        class="circle__321"
+        cx="410"
+        cy="365"
+        r="30"
+        fill="#AC58FA"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__322"
+        class="circle__322"
+        cx="420"
+        cy="295"
+        r="30"
+        fill="#D358F7"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <!-- No41x -->
+      <circle
+        id="circle__411"
+        class="circle__411"
+        cx="970"
+        cy="295"
+        r="30"
+        fill="#F4FA58"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__412"
+        class="circle__412"
+        cx="985"
+        cy="365"
+        r="30"
+        fill="#D0FA58"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <!-- No42x -->
+      <circle
+        id="circle__421"
+        class="circle__421"
+        cx="985"
+        cy="435"
+        r="30"
+        fill="#ACFA58"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__422"
+        class="circle__422"
+        cx="970"
+        cy="505"
+        r="30"
+        fill="#82FA58"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <!-- No51x -->
+      <circle
+        id="circle__511"
+        class="circle__511"
+        cx="656"
+        cy="675"
+        r="30"
+        fill="#58FAF4"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__512"
+        class="circle__512"
+        cx="580"
+        cy="660"
+        r="30"
+        fill="#58D3F7"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <!-- No52x -->
+      <circle
+        id="circle__521"
+        class="circle__521"
+        cx="510"
+        cy="625"
+        r="30"
+        fill="#58ACFA"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__522"
+        class="circle__522"
+        cx="460"
+        cy="570"
+        r="30"
+        fill="#5882FA"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <!-- No61x -->
+      <circle
+        id="circle__611"
+        class="circle__611"
+        cx="460"
+        cy="230"
+        r="30"
+        fill="#FA58F4"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__612"
+        class="circle__612"
+        cx="510"
+        cy="175"
+        r="30"
+        fill="#FA58D0"
+        stroke="#424242"
+        stroke-width="3"
+      />
+
+      <!-- No62x -->
+      <circle
+        id="circle__621"
+        class="circle__621"
+        cx="580"
+        cy="145"
+        r="30"
+        fill="#FA58AC"
+        stroke="#424242"
+        stroke-width="3"
+      />
+      <circle
+        id="circle__622"
+        class="circle__622"
+        cx="656"
+        cy="125"
+        r="30"
+        fill="#FA5882"
+        stroke="#424242"
+        stroke-width="3"
+      />
+    </svg>
+
+    <!-- Jquery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- クリックアクションエリア -->
+    <script>
+      "use strict";
+
+      // var circle = d3.select("#circle__000").data([30, 30, 30, 30, 30, 30]);
+      // circle
+      //   .transition()
+      //   .delay(function (d, i) {
+      //     console.log(d);
+      //     console.log(i);
+      //     return d * 100;
+      //   })
+      //   .duration(1000)
+      //   .attr("r", 25);
+
+      // 座標取得
+      $("#svgarea").on("click", function (e) {
+        console.log("offset=" + e.offsetX + "," + e.offsetY);
+      });
+
+      // 画面をクリック
+      $(function () {
+        $("body").on("click", () => {
+          $("#circle__000").fadeIn(1500);
+        });
+      });
+
+      // 000クリック
+      $(function () {
+        $("#circle__000").on("click", () => {
+          $("#circle__010").fadeIn(1500);
+          $("#circle__020").fadeIn(1500);
+          $("#circle__030").fadeIn(1500);
+          $("#line__010").fadeIn(1500);
+          $("#line__020").fadeIn(1500);
+          $("#line__030").fadeIn(1500);
+        });
+      });
+
+      // 010クリック
+      $(function () {
+        $("#circle__010").on("click", () => {
+          $("#circle__011").fadeIn(1500);
+          $("#circle__012").fadeIn(1500);
+          $("#circle__040").fadeIn(1500);
+          $("#line__011").fadeIn(1500);
+          $("#line__012").fadeIn(1500);
+          $("#line__040").fadeIn(1500);
+        });
+      });
+
+      // 020クリック
+      $(function () {
+        $("#circle__020").on("click", () => {
+          $("#circle__021").fadeIn(1500);
+          $("#circle__022").fadeIn(1500);
+          $("#circle__050").fadeIn(1500);
+          $("#line__021").fadeIn(1500);
+          $("#line__022").fadeIn(1500);
+          $("#line__050").fadeIn(1500);
+        });
+      });
+
+      // 030クリック
+      $(function () {
+        $("#circle__030").on("click", () => {
+          $("#circle__031").fadeIn(1500);
+          $("#circle__032").fadeIn(1500);
+          $("#circle__060").fadeIn(1500);
+          $("#line__031").fadeIn(1500);
+          $("#line__032").fadeIn(1500);
+          $("#line__060").fadeIn(1500);
+        });
+      });
+
+      // 040クリック
+      $(function () {
+        $("#circle__040").on("click", () => {
+          $("#circle__041").fadeIn(1500);
+          $("#circle__042").fadeIn(1500);
+          $("#line__041").fadeIn(1500);
+          $("#line__042").fadeIn(1500);
+        });
+      });
+
+      // 050クリック
+      $(function () {
+        $("#circle__050").on("click", () => {
+          $("#circle__051").fadeIn(1500);
+          $("#circle__052").fadeIn(1500);
+          $("#line__051").fadeIn(1500);
+          $("#line__052").fadeIn(1500);
+        });
+      });
+
+      // 060クリック
+      $(function () {
+        $("#circle__060").on("click", () => {
+          $("#circle__061").fadeIn(1500);
+          $("#circle__062").fadeIn(1500);
+          $("#line__061").fadeIn(1500);
+          $("#line__062").fadeIn(1500);
+        });
+      });
+
+      // 1xxクリック
+      $(function () {
+        $("#circle__011").on("click", () => {
+          $("#circle__111").fadeIn(1500);
+          $("#circle__112").fadeIn(1500);
+          $("#line__111").fadeIn(1500);
+          $("#line__112").fadeIn(1500);
+        });
+      });
+      $(function () {
+        $("#circle__012").on("click", () => {
+          $("#circle__121").fadeIn(1500);
+          $("#circle__122").fadeIn(1500);
+          $("#line__121").fadeIn(1500);
+          $("#line__122").fadeIn(1500);
+        });
+      });
+
+      // 2xxクリック
+      $(function () {
+        $("#circle__021").on("click", () => {
+          $("#circle__211").fadeIn(1500);
+          $("#circle__212").fadeIn(1500);
+          $("#line__211").fadeIn(1500);
+          $("#line__212").fadeIn(1500);
+        });
+      });
+      $(function () {
+        $("#circle__022").on("click", () => {
+          $("#circle__221").fadeIn(1500);
+          $("#circle__222").fadeIn(1500);
+          $("#line__221").fadeIn(1500);
+          $("#line__222").fadeIn(1500);
+        });
+      });
+
+      // 3xxクリック
+      $(function () {
+        $("#circle__031").on("click", () => {
+          $("#circle__311").fadeIn(1500);
+          $("#circle__312").fadeIn(1500);
+          $("#line__311").fadeIn(1500);
+          $("#line__312").fadeIn(1500);
+        });
+      });
+      $(function () {
+        $("#circle__032").on("click", () => {
+          $("#circle__321").fadeIn(1500);
+          $("#circle__322").fadeIn(1500);
+          $("#line__321").fadeIn(1500);
+          $("#line__322").fadeIn(1500);
+        });
+      });
+
+      // 4xxクリック
+      $(function () {
+        $("#circle__041").on("click", () => {
+          $("#circle__411").fadeIn(1500);
+          $("#circle__412").fadeIn(1500);
+          $("#line__411").fadeIn(1500);
+          $("#line__412").fadeIn(1500);
+        });
+      });
+      $(function () {
+        $("#circle__042").on("click", () => {
+          $("#circle__421").fadeIn(1500);
+          $("#circle__422").fadeIn(1500);
+          $("#line__421").fadeIn(1500);
+          $("#line__422").fadeIn(1500);
+        });
+      });
+
+      // 5xxクリック
+      $(function () {
+        $("#circle__051").on("click", () => {
+          $("#circle__511").fadeIn(1500);
+          $("#circle__512").fadeIn(1500);
+          $("#line__511").fadeIn(1500);
+          $("#line__512").fadeIn(1500);
+        });
+      });
+      $(function () {
+        $("#circle__052").on("click", () => {
+          $("#circle__521").fadeIn(1500);
+          $("#circle__522").fadeIn(1500);
+          $("#line__521").fadeIn(1500);
+          $("#line__522").fadeIn(1500);
+        });
+      });
+
+      // 6xxクリック
+      $(function () {
+        $("#circle__061").on("click", () => {
+          $("#circle__611").fadeIn(1500);
+          $("#circle__612").fadeIn(1500);
+          $("#line__611").fadeIn(1500);
+          $("#line__612").fadeIn(1500);
+        });
+      });
+      $(function () {
+        $("#circle__062").on("click", () => {
+          $("#circle__621").fadeIn(1500);
+          $("#circle__622").fadeIn(1500);
+          $("#line__621").fadeIn(1500);
+          $("#line__622").fadeIn(1500);
+        });
+      });
+    </script>
+  </body>
+</html>

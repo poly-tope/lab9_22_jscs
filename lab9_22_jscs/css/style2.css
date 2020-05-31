@@ -1,0 +1,9 @@
+#svgarea {
+  width: 1400px;
+  height: 800px;
+  background-color: rgb(195, 195, 195);
+}
+
+#circle__000 {
+  display: none;
+}

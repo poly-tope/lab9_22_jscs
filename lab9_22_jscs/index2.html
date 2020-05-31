@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <title>②JS選手権 / 22_内藤迅</title>
+  </head>
+  <body>
+    <!-- D3.js読み込み -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- svgエリア  -->
+    <!-- サークルエリア -->
+    <!-- No000 -->
+    <svg id="svgarea">
+      <circle
+        id="circle__000"
+        class="circle__000"
+        button="circle__000"
+        cx="700"
+        cy="400"
+        r="30"
+        fill="rgb(255, 255, 255)"
+        stroke="#424242"
+        stroke-width="3"
+      />
+    </svg>
+
+    <!-- Jquery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- クリックアクションエリア -->
+    <script>
+      "use strict";
+
+      // 座標取得
+      $("#svgarea").on("click", function (e) {
+        console.log("offset=" + e.offsetX + "," + e.offsetY);
+      });
+
+      // 画面をクリック
+      $(function () {
+        $("body").on("click", () => {
+          $("#circle__000").fadeIn(1500);
+        });
+      });
+
+      // circle__000
+      $(function () {
+        $("#circle__000").on("click", () => {
+          $("#circle__000").after(
+            "<svg><circle id='circle__010' class='circle__010' button='circle__010' cx='750' cy='320' r='30' fill='#F8E0E0' stroke='#424242' stroke-width='3'/></svg>",
+            "<svg><circle id='circle__020' class='circle__020' button='circle__020' cx='750' cy='480' r='30' fill='#E0F8E0' stroke='#424242' stroke-width='3'/></svg>",
+            "<svg><circle id='circle__030' class='circle__030' button='circle__030' cx='600' cy='400' r='30' fill='#E0E0F8' stroke='#424242' stroke-width='3'/></svg>"
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
